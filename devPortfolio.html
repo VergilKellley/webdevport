@@ -11,7 +11,7 @@
 	
 	
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
 	<link rel="stylesheet" type="text/css" href="../webDevPortfolio/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
@@ -47,7 +47,11 @@
       								</li>
 
       								<li class="nav-item">
-        								<a class="nav-link" href="#resume">Resume PDF</a>
+        								<a class="nav-link" href="#resume">Resume</a>
+      								</li>
+
+      								<li class="nav-item">
+        								<a onclick="displayContactInfo()" href="#" class="nav-link">Contact</a>
       								</li>
     							</ul>
   							</div>
@@ -58,40 +62,41 @@
 
 		<!-- landing page description -->
 		<div id="home"></div>
-		<div class="container-fluid" id="body">
+	<section id="body">
+		<div class="container-fluid" >
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-xs-12" id="front-end">
 					<h1>Front-end Developer</h1>
 				</div>
 			</div>
+		</div>
 
 			<!-- what i do text -->
-
+			<div class="container-fluid" id="info">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xs-4 col-md-6">
 						<h3 id="what-I-do">What I do</h3>
-						<p id="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
-					 Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei</p>
+						<p id="about-me">Greetings! My name is Vergil and I create responsive websites. I specialize in front-end developement using technologies like HTML5, CSS3, JavaScript, Bootstrap and Wordpress to name a few. Based in Chicago Illinois I design and develop with <span style="color: #fff; font-style: italic; text-decoration: underline;"> passion.</span></p>
 					</div>
+						
 
 					<!-- computer screen photo -->
 
-					<div class="col-md-6">
+					<div class="col-xs-4 col-md-6">
 						<img id="computer-screen" src="../webDevPortfolio/img/computer-screen.jpeg">	
 					</div>
 				</div>
+			</div>
 
-		</div>
-
+						<div id="contact-info" onclick="closeContactBox();" class="animated fadeIn ">
+							<p id="close-contact-box" >x</p>
+								<div id="phone-email">
+									<p style="font-size: 30px;">Vergil Kelley</p>
+									<p >Phone: (708) 973-9694</p>
+									<p >Email: verg_1@yahoo.com</p>
+								</div>
+						</div>
+	</section>
 		<!-- Portfolio -->
 		<div id="portfolio"></div>
 		<br>
@@ -99,16 +104,15 @@
 		
 		<div class="container-fluid">
 			<dir class="row">
-				<div class="col-sm-6">
+				<div class="col-md-3 col-lg-6">
 					<div class="title">
-
 						<h3 id="hongNgu">Hong Ngu</h3>
 						<p>Hong Ngu is a restaurant offering Vietnamese "Street Food" Opening soon in Chicago's Uptown Neighborhood.</p>
-						<img class="screen-shot" src="../webDevPortfolio/img/hong-ngu-screen-shot-1.PNG">
+						<img class="screen-shot" src="../webDevPortfolio/img/hongnguSplash.PNG">
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-md-3 col-lg-6">
 					<div class="title">
 						<h3>Pomp-N-Strut</h3>
 						<p>Locally owned and operated Pomp-N-Strut, has been a premier dog grooming facility on Chicago's Southwest Side for over 20 years.</p>
@@ -116,9 +120,11 @@
 					</div>
 				</div>
 			</dir>
+		</div>
 
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-md-3 col-lg-6">
 					<div class="title">
 						<h3>Dj PoLo</h3>
 						<p>Meet Dj PoLo, when he's not spinning Latin grooves like Bachata, Merenge and Salsa you can find him.....</p>
@@ -126,7 +132,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-md-3 col-lg-6">
 					<div class="title">					
 						<h3>Superior Housekeeping</h3>
 						<p>Having company this weekend? Let Superior Housekeeping get things spic and span. Owner operated since 1988.</p>
@@ -135,6 +141,176 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="resume"></div>
+
+		<div class="container-fluid" id="header-name">
+			<div class="row" >
+				<div class="col-sm-12">
+					<div id="header-border"></div>
+					<h1 id="myName">Vergil Kelley</h1>
+				</div>
+			</div>
+		</div>
+				
+		<div class="container-fluid" id="header-address">
+			<div class="row">
+				<div class="col-sm-12 address">
+					<p >4917 N. Kenomre Avenue #327<br>
+						Chicago Illinois 60640<br>
+						(708) 973-9694<br>
+						verg_1@yahoo.com</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<hr>
+		<div class="container-fluid" id="professional-summary">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Professional Summary</h3>
+					<p>Well trained self-taught web developer that knows how to create and modify web content using responsive design techniques. Have experience in analyzing customer needs, working with teams and using software for manipulating multimedia content.  I posess the capacity to adapt and learn in a fast paced environment.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="container-fluid" id="core-qualifications">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Core Technologies</h3>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Vanilla JavaScript</li>
+						<li>Bootstrap 4</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>Sublime</li>
+						<li>Wordpress</li>
+						<li>Windows 10</li>
+						<li>Git/GitHub</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-sm-10">
+					<p id="experience">Experience</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid dates">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2017 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Front-end Web Developer</h4>
+					<h5>Freelance, Chicago Il </h5>
+					<p>Providing front-end web developement services using responsive frameworks such as Bootstrap for small businesses. Collaborating with end-users to ensure delivery of superior websites on schedule.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2014 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Doorman</h4>
+					<h5>Burnham Park Plaza, Chicagi Il</h5>
+					<p>Opening the doors politely and greeting residents and guests with cordial professional verbage. Observe security cameras and maintain a general cleanliness in and around the front desk and entry to the build.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2010 - 12</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Pizano's Restaurant</h4>
+					<h5>Food Delivery, Chicago Il</h5>
+					<p>Successfully navigating the Chicago downtown area to deliver food products in a timely fashion, ensuring freshness and overall quality while providing outstanding customer service.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2000 - 09</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Real Estate Investor</h4>
+					<h5>Self employed, Chicago Il</h5>
+					<p>Buying and selling residential single family and multi-unit properties in the Chicagoland area.</p>
+				</div>
+		</div>
+		<hr>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					 <p id="education">Education</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2000 - 09</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Roosevelt University, Chicago Il</h4>
+					<p>Area of Study: Accounting and Business Administration.</p>
+					<p>Status: Senior; GPA 3.0/5.0</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					 <p id="education">References</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p></p>
+				</div>
+
+				<div class="col-sm-10">
+					<p>Available Upon Request</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			
+			function displayContactInfo(){
+				document.getElementById('contact-info').style.display="block";
+			}
+
+			function closeContactBox(){
+				document.getElementById('contact-info').style.display='none';
+			}
+		</script>
 			
 </body>
 </html>
