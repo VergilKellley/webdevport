@@ -1,0 +1,174 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif, helvetica;
+}
+
+#body {
+
+	background-color: #02f3f7;
+	height: 100vh;
+	overflow-x: hidden;
+}
+#nav {
+	position: fixed;
+	padding: 0;
+	overflow-x: hidden;
+	z-index: 1;
+}
+
+.navbar{
+	overflow-x: hidden;
+	height: 200px;
+}
+img#computer-screen {
+	position: relative;
+	height: 22rem;
+	width: 27rem;
+	top: 35%;
+	left: 15%;
+	border-radius: 15px;
+
+}
+
+.title img.screen-shot {
+	position: relative;
+	height: 350px;
+	width: 420px;
+	border-radius: 15px;
+}
+
+#front-end {
+	position:relative;
+	top: 100px;
+	left: 10%;
+	letter-spacing: 1rem;
+}
+
+#what-I-do {
+
+	position: relative;
+	top: 40%;
+	left: 10%;
+	width: 100%;
+	margin-right: 0px;
+	color:#fff;
+	text-decoration: underline;
+	text-decoration-color: #fff;
+}
+
+#about-me {
+	position: relative;
+	top: 45%;
+	left: 10%;
+	width: 100%;
+	margin-right: 0px;
+	font-size: 25px;
+
+}
+
+#close-contact-box{
+	position: relative;
+	cursor: pointer;
+	background: #000;
+	height: 24px;
+	width: 20px;
+	color: #fff;
+}
+
+#contact-info{
+	position: absolute;
+	display: none;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+	height: 250px;
+	width: 300px;
+	border: #000 solid 3px;
+	border-radius: 15px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+	background-color: #02f3f7;
+	color: #000;
+	z-index: 5;
+}
+
+#phone-email {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+/*button {
+	position: relative;
+	top: 15rem;
+	left: 50%;
+}*/
+.title, h3 p{
+	position: relative;
+	text-align: center;
+	color: #000;
+	font-style: italic;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media(max-width: 800px) {
+  #computer-screen {
+    display: none;
+  }
+}
+
+/**************** resume *********************/
+
+h1#myName {
+	position: relative;
+	text-align: center;
+	font-weight: bolder;
+	top: 90px;
+	padding-bottom: 40px;
+	letter-spacing: 1rem;
+
+}
+
+.address {
+	position: relative;
+	margin-top: 90px;
+	text-align: center;
+	line-height: 2.3rem;
+	font-size: 1.2rem;
+}
+
+#header-border {
+	position: relative;
+	margin-top: 20px;
+	width: 80vw;
+	height: 12px;
+	background-color: #02f3f7;
+	/*position: absolute;*/
+  	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+#core-qualifications{
+	position: relative;
+	padding-left: 10px;
+}
+
+#experience {
+	position: relative;
+	text-align: center;
+ 	color: #000;
+ 	font-size: 2rem;
+}
+
+#education{
+	position: relative;
+	text-align: center;
+ 	color: #000;
+ 	font-size: 2rem;
+}
+
