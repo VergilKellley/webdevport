@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif, helvetica;
+	color: #000;
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	font-weight: bolder;
+	top: 90px;
+	padding-bottom: 40px;
+	letter-spacing: 1rem;
+
+}
+
+.address {
+	position: relative;
+	margin-top: 90px;
+	text-align: center;
+	line-height: 2.3rem;
+	font-size: 1.2rem;
+}
+
+#header-border {
+	position: relative;
+	margin-top: 20px;
+	width: 80vw;
+	height: 12px;
+	background-color: #02f3f7;
+	/*position: absolute;*/
+  	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+#core-qualifications{
+	position: relative;
+	padding-left: 10px;
+}
+
+#experience {
+	position: relative;
+	text-align: center;
+ 	color: #000;
+ 	font-size: 2rem;
+}
+
+#education{
+	position: relative;
+	text-align: center;
+ 	color: #000;
+ 	font-size: 2rem;
+}

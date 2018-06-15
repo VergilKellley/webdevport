@@ -1,0 +1,27 @@
+#nav {
+	position: fixed;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.navbar{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 20px;
+	left: 300px;
+	margin-top: 20px;
+}
+
+#front-end h1{
+	position: relative;
+	top: 175px;
+	left: 200px;
+}
+
+#what-I-do {
+	position: relative;
+	top: 250px;
+	left: 10px;
+	background-color: #02f3f7;
+	width: 300px;
+}
