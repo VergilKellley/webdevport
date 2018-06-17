@@ -50,10 +50,11 @@ li a {
 }
 #front-end {
 	position:relative;
-	top: 120px;
+	top: 190px;
 	letter-spacing: 1.2rem;
 	color: #fff;
 	text-align: center;
+	font-size: 55px;
 }
 
 /*#what-I-do {
